@@ -96,10 +96,8 @@ class _MyHomePageState extends State<MyHomePage> {
               MediaQuery.of(context).size.width - (200 + myWidth)) {
             translateX += 1;
             myWidth = MediaQuery.of(context).size.width - (200 + myWidth);
-          } else {
-            setState(() {
-              canLoop = 1;
-            });
+          } else {           
+              canLoop = 1;           
           }
         });
       });
